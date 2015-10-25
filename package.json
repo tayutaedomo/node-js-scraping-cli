@@ -1,0 +1,18 @@
+{
+  "name": "crawler",
+  "version": "0.0.1",
+  "description": "Crawling to http://syosetu.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tayutaedomo",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.65.0"
+  }
+}
