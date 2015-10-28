@@ -1,7 +1,7 @@
 {
-  "name": "crawler",
+  "name": "nodejs-scraping",
   "version": "0.0.1",
-  "description": "Crawling to http://syosetu.com",
+  "description": "Try scraping by node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "cheerio": "^0.19.0",
+    "cheerio-httpcli": "tayutaedomo/cheerio-httpcli#fix-redirect-uri",
     "request": "^2.65.0"
   }
 }
+
