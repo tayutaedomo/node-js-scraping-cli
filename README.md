@@ -14,3 +14,8 @@ export SYOSETU_PW="your password"
 node get_syosetu_with_logged_in.js
 ```
 
+## get_syosetu_recommend.js
+```
+node get_syosetu_recommend.js
+```
+
