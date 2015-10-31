@@ -10,12 +10,12 @@ $ node app/top.js
 ```
 
 ## get_syosetu_with_logged_in.js
-Get a web page with 'cheerio-httpcli' moudle and try to log in.
+Get a web page with 'cheerio-httpcli' moudle and try to sign in.
 
 ```
 $ export SYOSETU_ID="your user id"
 $ export SYOSETU_PW="your password"
-$ node app/get_syosetu_with_logged_in.js
+$ node app/user_top.js
 ```
 
 ## get_syosetu_recommend.js
