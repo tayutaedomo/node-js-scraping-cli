@@ -9,7 +9,7 @@ Get a web page with 'request' and 'cheerio' modules.
 $ node app/top.js
 ```
 
-## get_syosetu_with_logged_in.js
+## user_top.js
 Get a web page with 'cheerio-httpcli' moudle and try to sign in.
 
 ```
@@ -18,11 +18,11 @@ $ export SYOSETU_PW="your password"
 $ node app/user_top.js
 ```
 
-## get_syosetu_recommend.js
+## recommend.js
 Get some contents with 'cheerio-httpcli' moudle.
 
 ```
-$ node app/get_syosetu_recommend.js
+$ node app/recommend.js
 ```
 
 ## get_syosetu_novel_top.js
