@@ -1,11 +1,11 @@
 var assert = require('assert');
-var Home = require('./../app/home.js');
+var Top = require('./../app/top.js');
 
-describe('Home', function(){
+describe('Top', function(){
     var home;
 
     beforeEach(function(){
-        home = new Home()
+        home = new Top()
     });
 
     describe('get', function() {

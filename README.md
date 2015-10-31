@@ -2,11 +2,11 @@
 Try scraping by node.js
 
 # Usage
-## get_syosetu_top.js
+## top.js
 Get a web page with 'request' and 'cheerio' modules.
 
 ```
-$ node app/get_syosetu_top.js
+$ node app/top.js
 ```
 
 ## get_syosetu_with_logged_in.js
@@ -48,5 +48,10 @@ $ #sequelize migration:create
 $ #sequelize init
 $ sequelize db:migrate
 $ node app/store_syosetu_top.js
+```
+
+# Test
+```
+npm test
 ```
 
