@@ -19,6 +19,11 @@ $ node app/get_syosetu_with_logged_in.js
 $ node app/get_syosetu_recommend.js
 ```
 
+## get_syosetu_novel_top.js
+```
+$ node app/get_syosetu_novel_top.js
+```
+
 ## store_syosetu_top.js
 ```
 $ npm i sequelize-cli -g
