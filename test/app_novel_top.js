@@ -9,10 +9,11 @@ describe('NovelTop', function() {
     });
 
     describe('get', function() {
-        it('returns correct response', function() {
+        it('returns correct response', function(done) {
             var url = 'http://ncode.syosetu.com/n6316bn/';
             novelTop.get(url, function(data){
                 assert.equal(data['url'], url);
+                done();
             });
         });
     });

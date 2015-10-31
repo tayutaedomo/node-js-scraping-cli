@@ -9,10 +9,11 @@ describe('Recommend', function() {
     });
 
     describe('get', function() {
-        it('returns correct response', function() {
+        it('returns correct response', function(done) {
             var url = 'http://ncode.syosetu.com/n6316bn/';
             recommend.get(url, function(data){
                 assert.notEqual(data[0]['title'], null);
+                done();
             });
         });
     });
