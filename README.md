@@ -25,18 +25,18 @@ Get some contents with 'cheerio-httpcli' moudle.
 $ node app/recommend.js
 ```
 
-## get_syosetu_novel_top.js
+## novel_top.js
 Get some contents with 'cheerio-httpcli' moudle.
 
 ```
-$ node app/get_syosetu_novel_top.js
+$ node app/novel_top.js
 ```
 
-## get_syosetu_novel_detail.js
+## novel_info.js
 Get some contents with 'cheerio-httpcli' moudle.
 
 ```
-$ node app/get_syosetu_novel_detail.js
+$ node app/novel_info.js
 ```
 
 ## store_syosetu_top.js
