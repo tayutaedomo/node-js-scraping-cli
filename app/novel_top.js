@@ -17,6 +17,7 @@ var NovelTop = function() {
                     console.log(err);
                 })
                 .finally(function () {
+                    novel['url'] = url;
                     callback(novel);
                 });
         }
@@ -45,12 +46,14 @@ var NovelTop = function() {
     }
 };
 
+module.exports = NovelTop;
+
 
 if (require.main === module) {
     var url = "http://ncode.syosetu.com/n6316bn/";
 
     var novelTop = new NovelTop();
-    novelTop.get(url, function(data) {
+    novelTop.get(url, function(data){
         console.log(data);
     });
 }

@@ -57,6 +57,8 @@ var Recommend = function() {
     }
 };
 
+module.exports = Recommend;
+
 
 if (require.main === module) {
     var url = "http://ncode.syosetu.com/n6316bn/";

@@ -1,7 +1,7 @@
 var request = require("request");
 var cheerio = require("cheerio");
 
-var top = function() {
+var Top = function() {
     return {
         // Refer: http://liginc.co.jp/programmer/archives/4848
         get: function(url, callback) {
@@ -35,12 +35,12 @@ var top = function() {
     };
 };
 
-module.exports = top;
+module.exports = Top;
 
 
 // Refer: http://stackoverflow.com/questions/4981891/node-js-equivalent-of-pythons-if-name-main
 if (require.main === module) {
-    var top = new top();
+    var top = new Top();
     top.get("http://syosetu.com/", function(data){
         console.log(data);
     });

@@ -103,6 +103,8 @@ var NovelInfo = function() {
     }
 };
 
+module.exports = NovelInfo;
+
 
 if (require.main === module) {
     var url = "http://ncode.syosetu.com/novelview/infotop/ncode/n6316bn/";

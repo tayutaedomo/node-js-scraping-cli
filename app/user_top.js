@@ -2,7 +2,6 @@ var client = require('cheerio-httpcli');
 
 var UserTop = function() {
     client.setBrowser('chrome');
-    client.debug = true;
 
     return {
         // Refer: http://qiita.com/ktty1220/items/64168e8d416d6d8ffb45
@@ -29,8 +28,12 @@ var UserTop = function() {
     };
 };
 
+module.exports = UserTop;
+
 
 if (require.main === module) {
+    client.debug = true;
+
     var user_id = process.env['SYOSETU_ID'];
     var user_pw = process.env['SYOSETU_PW'];
     var url = 'https://ssl.syosetu.com/login/input/';
