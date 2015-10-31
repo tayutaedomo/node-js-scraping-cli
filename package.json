@@ -3,16 +3,22 @@
   "version": "0.0.1",
   "description": "Try scraping with node.js",
   "main": "index.js",
-  "author": "tayutaedomo",
-  "license": "MIT License",
-  "devDependencies": {
+  "scripts": {
+    "test": "mocha"
   },
+  "author": "tayutaedomo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tayutaedomo/nodejs-scraping.git"
+  },
+  "devDependencies": {},
   "dependencies": {
     "cheerio": "^0.19.0",
     "cheerio-httpcli": "tayutaedomo/cheerio-httpcli#fix-redirect-uri",
+    "mocha": "^2.3.3",
     "request": "^2.65.0",
     "sequelize": "^3.13.0",
     "sqlite3": "^3.1.0"
   }
 }
-
