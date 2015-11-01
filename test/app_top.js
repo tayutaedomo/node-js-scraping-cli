@@ -1,18 +1,18 @@
 var assert = require('assert');
 var Top = require('./../app/top.js');
 
-var nock = require('nock');
-nock('http://syosetu.com').get('/').replyWithFile(200, __dirname + '/fixtures/syosetu.com.html');
-
 //var nockBack = require('nock').back;
 //nockBack.fixtures = __dirname + '/fixtures';
 //nockBack.setMode('lockdown');
 //nockBack.setMode('record');
+//var request = require('request');
 //nockBack('syosetu.com.json', function(nockDone) {
 //    request.get('http://syosetu.com/', function(err, res, body) {
 //        nockDone();
 //    });
 //});
+//var nock = require('nock');
+//nock('http://syosetu.com').get('/').replyWithFile(200, __dirname + '/fixtures/syosetu.com.html');
 
 describe('Top', function() {
     var top;
