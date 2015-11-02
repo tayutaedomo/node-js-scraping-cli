@@ -29,7 +29,7 @@ var NovelTop = function() {
         data['title'] = $('.novel_title').text();
         data['author'] = $('.novel_writername a').text();
         var matches = $('.novel_writername a').attr('href').match(/(\d+)/);
-        data['author'] = matches[1];
+        data['authorId'] = matches[1];
         data['outline'] = $('#novel_ex').text();
 
         var links = [];

@@ -30,7 +30,7 @@ var NovelInfo = function() {
 
         var matches = $('#pre_info').text().match(/(連載中|完結済)全(\d+)部/);
         data['state'] = matches[1];
-        data['page_count'] = matches[2];
+        data['pageCount'] = matches[2];
 
         $('#noveltable1 td').each(function(index, element){
             switch (index) {
@@ -42,7 +42,7 @@ var NovelInfo = function() {
                     var target = $(element).find('a');
                     data['author'] = target.text();
                     var matches = target.attr('href').match(/(\d+)/);
-                    data['author_id'] = matches[1];
+                    data['authorId'] = matches[1];
                     break;
 
                 case 2:
@@ -59,42 +59,42 @@ var NovelInfo = function() {
         $('#noveltable2 td').each(function(index, element){
             switch (index) {
                 case 0:
-                    data['published_at'] = $(element).text();
+                    data['publishedAt'] = $(element).text();
                     break;
 
                 case 1:
-                    data['last_published_at'] = $(element).text();
+                    data['lastPublishedAt'] = $(element).text();
                     break;
 
                 case 2:
                     var matches = $(element).text().match(/([\d,]+)/);
-                    data['impression_count'] = matches[1].replace(/,/g, '');
+                    data['impressionCount'] = matches[1].replace(/,/g, '');
                     break;
 
                 case 3:
                     var matches = $(element).text().match(/([\d,]+)/);
-                    data['review_count'] = matches[1].replace(/,/g, '');
+                    data['reviewCount'] = matches[1].replace(/,/g, '');
                     break;
 
                 case 4:
                     var matches = $(element).text().match(/([\d,]+)/);
-                    data['bookmark_count'] = matches[1].replace(/,/g, '');
+                    data['bookmarkCount'] = matches[1].replace(/,/g, '');
                     break;
 
                 case 5:
                     var matches = $(element).text().match(/([\d,]+)/);
-                    data['total_rating'] = matches[1].replace(/,/g, '');
+                    data['totalRating'] = matches[1].replace(/,/g, '');
                     break;
 
                 case 6:
                     var matches = $(element).text().match(/([\d,]+)pt/g);
-                    data['composition_rating'] = matches[0].replace(/[,pt]/g, '');
-                    data['story_rating'] = matches[1].replace(/[,pt]/g, '');
+                    data['compositionRating'] = matches[0].replace(/[,pt]/g, '');
+                    data['storyRating'] = matches[1].replace(/[,pt]/g, '');
                     break;
 
                 case 8:
                     var matches = $(element).text().match(/([\d,]+)/);
-                    data['total_rating'] = matches[1].replace(/,/g, '');
+                    data['totalRating'] = matches[1].replace(/,/g, '');
                     break;
             }
         });
