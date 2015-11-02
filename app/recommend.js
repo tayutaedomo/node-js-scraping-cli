@@ -90,11 +90,11 @@ if (require.main === module) {
     var url = "http://ncode.syosetu.com/n6316bn/";
     var recommend = new Recommend();
 
-    //recommend.get(url, function(data){
-    //    console.log(data);
-    //});
-    recommend.store(url, function(data) {
+    recommend.get(url, function(data){
         console.log(data);
     });
+    //recommend.store(url, function(data) {
+    //    console.log(data);
+    //});
 }
 

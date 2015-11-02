@@ -39,7 +39,7 @@ Get some contents with 'cheerio-httpcli' moudle.
 $ node app/novel_info.js
 ```
 
-## store_syosetu_top.js
+## recommend.js store
 Store some contents to db table with 'sequelize' module and use db migration by sequelize.
 
 ```
@@ -47,7 +47,7 @@ $ npm i sequelize-cli -g
 $ #sequelize migration:create
 $ #sequelize init
 $ sequelize db:migrate
-$ node app/store_syosetu_top.js
+$ #node app/recommend.js
 ```
 
 # Test
