@@ -4,23 +4,35 @@ module.exports = {
   // See also: http://docs.sequelizejs.com/en/latest/docs/models-definition/
   up: function (queryInterface, Sequelize) {
     return queryInterface.createTable('novels', {
-        ncode: Sequelize.INTEGER,
+        id: {
+            type: Sequelize.INTEGER,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        ncode: {
+            type: Sequelize.INTEGER,
+            unique: true
+        },
+        title: Sequelize.STRING,
+        url: Sequelize.STRING,
         outline: Sequelize.TEXT,
-        author_id: Sequelize.INTEGER,
-        author_name: Sequelize.STRING,
+        state: Sequelize.STRING,
+        pageCount: Sequelize.INTEGER,
+        authorId: Sequelize.INTEGER,
+        authorName: Sequelize.STRING,
         keywords: Sequelize.TEXT,
         category: Sequelize.STRING,
-        published_at: Sequelize.DATE,
-        last_published_at: Sequelize.DATE,
-        impression_count: Sequelize.INTEGER,
-        review_count: Sequelize.INTEGER,
-        bookmark_count: Sequelize.INTEGER,
-        total_rating: Sequelize.INTEGER,
-        composition_rating: Sequelize.INTEGER,
-        story_rating: Sequelize.INTEGER,
-        character_count: Sequelize.INTEGER,
-        created_at: Sequelize.DATE,
-        updated_at: Sequelize.DATE
+        publishedAt: Sequelize.DATE,
+        lastPublishedAt: Sequelize.DATE,
+        impressionCount: Sequelize.INTEGER,
+        reviewCount: Sequelize.INTEGER,
+        bookmarkCount: Sequelize.INTEGER,
+        totalRating: Sequelize.INTEGER,
+        compositionRating: Sequelize.INTEGER,
+        storyRating: Sequelize.INTEGER,
+        characterCount: Sequelize.INTEGER,
+        createdAt: Sequelize.DATE,
+        updatedAt: Sequelize.DATE
     });
   },
 

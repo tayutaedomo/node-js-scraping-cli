@@ -1,22 +1,34 @@
 module.exports = function(sequelize, DataTypes) {
     return sequelize.define("Novel", {
-        ncode: DataTypes.STRING,
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        ncode: {
+            type: DataTypes.STRING,
+            unique: true
+        },
+        title: DataTypes.STRING,
+        url: DataTypes.STRING,
         outline: DataTypes.TEXT,
-        author_id: DataTypes.INTEGER,
-        author_name: DataTypes.STRING,
+        state: DataTypes.STRING,
+        pageCount: DataTypes.INTEGER,
+        authorId: DataTypes.INTEGER,
+        authorName: DataTypes.STRING,
         keywords: DataTypes.TEXT,
         category: DataTypes.STRING,
-        published_at: DataTypes.DATE,
-        last_published_at: DataTypes.DATE,
-        impression_count: DataTypes.INTEGER,
-        review_count: DataTypes.INTEGER,
-        bookmark_count: DataTypes.INTEGER,
-        total_rating: DataTypes.INTEGER,
-        composition_rating: DataTypes.INTEGER,
-        story_rating: DataTypes.INTEGER,
-        character_count: DataTypes.INTEGER,
-        created_at: DataTypes.DATE,
-        updated_at: DataTypes.DATE
+        publishedAt: DataTypes.DATE,
+        lastPublishedAt: DataTypes.DATE,
+        impressionCount: DataTypes.INTEGER,
+        reviewCount: DataTypes.INTEGER,
+        bookmarkCount: DataTypes.INTEGER,
+        totalRating: DataTypes.INTEGER,
+        compositionRating: DataTypes.INTEGER,
+        storyRating: DataTypes.INTEGER,
+        characterCount: DataTypes.INTEGER,
+        createdAt: DataTypes.DATE,
+        updatedAt: DataTypes.DATE
     })
 };
 
