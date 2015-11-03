@@ -1,6 +1,15 @@
 # nodejs-scraping
 Try scraping by node.js
 
+# Setup
+## for Mac
+```
+$ brew install node
+$ git clone git@github.com:tayutaedomo/node-js-scraping-cli.git
+$ cd node-js-scraping-cli
+$ npm install
+```
+
 # Usage
 ## top.js
 Get a web page with 'request' and 'cheerio' modules.
