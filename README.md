@@ -59,6 +59,10 @@ $ sequelize db:migrate
 $ #node app/recommend.js
 ```
 
+## async_series.js
+Try series method of async module.
+
+
 # Test
 ```
 npm test
