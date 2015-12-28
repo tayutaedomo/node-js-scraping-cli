@@ -5,14 +5,13 @@ const Top = () => {
   return {
     // Refer: http://liginc.co.jp/programmer/archives/4848
     get: (url, callback) => {
-      request({url: url}, (error, response, body) => {
+      request({ url: url }, (error, response, body) => {
         const result = {};
 
         if (!error && response.statusCode == 200) {
           $ = cheerio.load(body);
           result.url = response.request.href;
           result.title = $('title').text();
-
         } else {
           console.log('--------------------------------------------------');
           if (error && 'code' in error) {
@@ -37,12 +36,12 @@ const Top = () => {
 
 module.exports = Top;
 
-
 // Refer: http://stackoverflow.com/questions/4981891/node-js-equivalent-of-pythons-if-name-main
 if (require.main === module) {
   const top = new Top();
-  top.get('http://syosetu.com/', (data) => {
+  top.get('http://syosetu.com/', data => {
     console.log(data);
   });
 }
 
+//# sourceMappingURL=top-compiled.js.map

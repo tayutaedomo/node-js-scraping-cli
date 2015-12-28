@@ -1,0 +1,14 @@
+{
+  "requireCamelCaseOrUpperCaseIdentifiers": true,
+  "requireParenthesesAroundIIFE": true,
+  "disallowMultipleSpaces": true,
+  "validateIndentation": 2,
+  "maximumLineLength": 120,
+  "requireCapitalizedConstructors": true,
+  "disallowEmptyBlocks": true,
+  "validateQuoteMarks": "'",
+  "validateLineBreaks": "LF",
+  "disallowMultipleLineStrings": true,
+  "requireDotNotation": true
+}
+

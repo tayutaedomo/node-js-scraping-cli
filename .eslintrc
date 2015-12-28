@@ -1,0 +1,17 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "strict": 2,
+    "no-var": 1,
+    "prefer-const": 1,
+    "prefer-arrow-callback": 1,
+    "arrow-parens": 2
+  },
+  "ecmaFeatures": {
+    "modules": true
+  }
+}
+
